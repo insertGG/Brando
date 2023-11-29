@@ -87,13 +87,6 @@
   margin-bottom: 20px;
 }
 
-.partners-video {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
 .partners-button {
   display: inline-block;
   padding: 10px 20px;
@@ -134,45 +127,33 @@
 /* Custom CSS for the image style and colors */
 
 .hero {
-  background-color: #0a6ab8; /* Blue */
+  background-color: #0a6ab8;
 }
 
 .hero-title {
-  color: #ffffff; /* White */
+  color: #ffffff;
 }
 
 .hero-subtitle {
-  color: #ffffff; /* White */
+  color: #ffffff;
 }
 
 .hero-image {
   position: relative;
 }
 
-.hero-image::before {
-  content: "";
-  position: absolute;
-  top: -50px;
-  left: -50px;
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  background-color: #f9e600; /* Yellow */
-  z-index: -1;
-}
-
 .logo {
-  color: #ffffff; /* White */
+  color: #ffffff;
 }
 
 .header {
-  background-color: #0a6ab8; /* Blue */
+  background-color: #0a6ab8;
 }
 
 .footer {
-  background-color: #0a6ab8; /* Blue */
+  background-color: #0a6ab8;
 }
 
 .footer-logo {
-  color: #ffffff; /* White */
+  color: #ffffff;
 }
