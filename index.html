@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&family=Montserrat"
+    />
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
@@ -99,7 +103,12 @@
     <div class="container-fluid text-center" id="chocolates">
       <div class="row row-cols-1 row-cols-md-2">
         <div class="card border-0 bg-transparent image-container">
-          <img src="source/chocolate1.png" alt="chocolate" />
+          <img class="background-image" src="source/byn.png" alt="chocolate" />
+          <img
+            class="foreground-image"
+            src="source/bombones.png"
+            alt="bombones"
+          />
           <h1 class="centered-text">Chocolates</h1>
         </div>
         <div class="col">
@@ -181,7 +190,7 @@
     <div class="container-fluid about-us" id="historia">
       <div class="row">
         <div class="card h-100 text-bg-primary mb-3 col-md-6">
-          <h1><strong>SOBRE NOSOTROS</strong></h1>
+          <h2><strong>SOBRE NOSOTROS</strong></h2>
           <p class="text-start fs-3">
             BRANDO nace en Madrid en 2021 con la intención de revolucionar el
             mundo del helado desde la imagen la estética y sus sabores.<br />
@@ -203,10 +212,11 @@
 
     <div class="container-fluid" id="ubicacion">
       <div class="row">
-        <div class="col-md-6">
-          <img src="source/local.png" alt="local" style="height: auto" />
+        <div class="col-md-6 image-container">
+          <img src="source/local.png" alt="local" />
+          <h1 class="centered-text-local">Donde encontrarnos</h1>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.352150744775!2d-3.7016827242031938!3d40.42320057143853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4229dff6846027%3A0xdf782634b767451f!2sBrando!5e0!3m2!1ses-419!2sar!4v1701230729206!5m2!1ses-419!2sar"
             style="border: 0"
