@@ -124,7 +124,25 @@
   color: #ffffff;
 }
 
-/* Custom CSS for the image style and colors */
+.image-container {
+  position: relative;
+}
+
+.centered-text {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.centered-text-polos {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
 
 .hero {
   background-color: #0a6ab8;
