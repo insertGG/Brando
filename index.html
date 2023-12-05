@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Varela+Round&family=Montserrat"
     />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
@@ -18,12 +22,11 @@
     <title>Brando</title>
   </head>
   <body>
-    <nav
-      class="navbar navbar-expand-lg navbar-dark"
-      style="background-color: #0a6ab8"
-    >
+    <nav class="navbar navbar-expand-lg navbar-dark nav-underline">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">BRANDO</a>
+        <a class="navbar-brand" href="index.html"
+          ><img class="logo" src="source/brando.png" alt="BRANDO"
+        /></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -38,6 +41,11 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#helados">Helados</a>
             </li>
             <li class="nav-item">
@@ -50,10 +58,13 @@
               <a class="nav-link" href="#polosImages">Polos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#historia">Sobre nosotros</a>
+              <a class="nav-link" href="#historia">Quiénes somos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#ubicacion">Donde encontrarnos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="franquicias.html">Franquicias</a>
             </li>
           </ul>
         </div>
@@ -67,11 +78,13 @@
           Descubre cómo puedes formar parte de nuestra red de franquicias y
           ofrecer el mejor helado artesanal a tus clientes.
         </div>
-        <a class="hero-button" href="#">Más helado</a>
+        <a class="btn btn-secondary" href="franquicias.html" role="button"
+          >Más helado</a
+        >
       </div>
 
       <div class="hero-image">
-        <img src="https://i.imgur.com/4Q0XZ8o.jpg" alt="Ice cream cone" />
+        <img src="" alt="Ice cream cone" />
       </div>
     </div>
 
@@ -189,24 +202,35 @@
 
     <div class="container-fluid about-us" id="historia">
       <div class="row">
-        <div class="card h-100 text-bg-primary mb-3 col-md-6">
-          <h2><strong>SOBRE NOSOTROS</strong></h2>
+        <div
+          class="card h-100 text-bg-primary rounded-5 rounded-start-0 mb-3 col-md-6"
+        >
+          <h2><strong>QUIÉNES SOMOS</strong></h2>
           <p class="text-start fs-3">
-            BRANDO nace en Madrid en 2021 con la intención de revolucionar el
-            mundo del helado desde la imagen la estética y sus sabores.<br />
+            BRANDO nace en Madrid en 2021 con la intención de
+            <strong>revolucionar el mundo del helado</strong> desde la imagen la
+            estética y sus sabores.<br />
             Rompe moldes gracias a una presentación en vitrinas de piedra, como
-            si se tratara de un paisaje lunar en un local donde prevalece el
-            azul cobalto y donde un sol artificial cambia su luz según avanza el
-            día.<br />
+            si se tratara de
+            <strong
+              >un paisaje lunar en un local donde prevalece el azul cobalto y
+              donde un sol artificial cambia su luz según avanza el día.</strong
+            ><br />
             En nuestro propio obrador se crea el 100% de los productos que
             ofrecemos, con la firme intención de obtener la máxima excelencia
-            utilizando productos NATURALES sin aditivos ni conservantes. De esta
-            manera obtenemos la CALIDAD que nos diferencia.<br />
-            Debido a su sostenido crecimiento Brando se sitúa como una de las
-            heladerías artesanales más reconocidas de Madrid.
+            utilizando
+            <strong
+              >productos NATURALES sin aditivos ni conservantes. De esta manera
+              obtenemos la CALIDAD que nos diferencia.</strong
+            ><br />
+            Debido a su sostenido crecimiento Brando se sitúa como
+            <strong
+              >una de las heladerías artesanales más reconocidas de
+              Madrid.</strong
+            >
           </p>
         </div>
-        <div class="col-md-6 bg-light"></div>
+        <div class="col-md-6"></div>
       </div>
     </div>
 
@@ -232,12 +256,17 @@
 
     <div class="partners">
       <div class="partners-title">Seamos socios</div>
-      <a class="partners-button" href="#">Contacta con nosotros</a>
+      <a class="btn btn-secondary" href="franquicias.html" role="button"
+        >Súmate a nosotros</a
+      >
     </div>
+
     <div class="footer">
-      <div class="footer-logo">BRANDO</div>
+      <div class="footer-logo">
+        <img src="source/brando.png" alt="BRANDO" />
+      </div>
       <div class="footer-nav">
-        <a class="footer-nav-link" href="#"
+        <a class="footer-nav-link" href="index.html"
           ><img
             src="source/instagramIcon.svg"
             alt="Instagram"
@@ -255,6 +284,17 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://kit.fontawesome.com/7bf501d9d7.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="script.js"></script>
+    <script src="upBTN.js"></script>
+    <button id="scrollToTopButton" class="scroll-to-top" title="Ir arriba">
+      <i
+        class="fa-solid fa-arrows-up-to-line fa-bounce fa-lg"
+        style="color: #000000"
+      ></i>
+    </button>
   </body>
 </html>
