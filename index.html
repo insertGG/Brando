@@ -49,19 +49,16 @@
               <a class="nav-link" href="#helados">Helados</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#polosImages">Polos</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#chocolates">Chocolates</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#pasteleria">Pastelería</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#polosImages">Polos</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="#historia">Quiénes somos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#ubicacion">Donde encontrarnos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="franquicias.html">Franquicias</a>
@@ -71,21 +68,26 @@
       </div>
     </nav>
 
-    <div class="hero">
+    <div class="image-container-top">
+      <div class="background-image">
+        <img src="source/principal.png" alt="Brando" />
+      </div>
+      <div class="centered-text-principal"><h1>Brando Helados</h1></div>
+    </div>
+
+    <!--<div class="hero">
       <div class="hero-text">
-        <div class="hero-title">Brando helado con socios</div>
+        <div class="hero-title">Brando helados</div>
         <div class="hero-subtitle">
           Descubre cómo puedes formar parte de nuestra red de franquicias y
           ofrecer el mejor helado artesanal a tus clientes.
         </div>
       </div>
-
-      <div class="hero-image">
-        <img src="" alt="Ice cream cone" />
-      </div>
     </div>
+    -->
+
     <div class="container-md">
-      <div class="container-fluid text-center" id="helados">
+      <div class="container-fluid text-center space-min" id="helados">
         <div class="row row-cols-1 row-cols-md-2">
           <div class="card border-0 bg-transparent image-container">
             <img src="source/helados4.png" alt="helado" />
@@ -110,7 +112,37 @@
         </div>
       </div>
 
-      <div class="container-fluid text-center" id="chocolates">
+      <div class="container-fluid text-center space-min" id="polosImages">
+        <div class="row row-cols-1 row-cols-md-2">
+          <div class="col">
+            <div
+              class="row row-cols-1 row-cols-md-2"
+              style="padding-bottom: 20px"
+            >
+              <div class="card h-100 border-0 bg-transparent">
+                <img src="source/polos2.png" alt="polos" />
+              </div>
+              <div class="card h-100 border-0 bg-transparent">
+                <img src="source/polos3.png" alt="polos" />
+              </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2">
+              <div class="card h-100 border-0 bg-transparent">
+                <img src="source/polos4.png" alt="polos" />
+              </div>
+              <div class="card h-100 border-0 bg-transparent">
+                <img src="source/polos5.png" alt="polos" />
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 bg-transparent image-container">
+            <img src="source/polos1.png" alt="polos" />
+            <h1 class="centered-text-polos">Polos</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid text-center space-min" id="chocolates">
         <div class="row row-cols-1 row-cols-md-2">
           <div class="card border-0 bg-transparent image-container">
             <img
@@ -144,101 +176,85 @@
         </div>
       </div>
 
-      <div class="container-fluid text-center" id="pasteleria">
+      <div class="container-fluid text-center space-min" id="pasteleria">
         <div class="row row-cols-1 row-cols-md-2">
           <div class="col">
-            <div
-              class="card border-0 bg-transparent"
-              style="padding-bottom: 14px"
-            >
-              <img src="source/pasteleria2.png" alt="pastel" />
-            </div>
-            <div class="row row-cols-1 row-cols-md-2">
-              <div class="card h-100 border-0 bg-transparent">
-                <img src="source/pasteleria4.png" alt="pastel" />
+            <div class="col">
+              <div class="card border-0 bg-transparent image-container">
+                <img src="source/pasteleria-ejemplo.png" alt="pastel" />
+                <h1 class="centered-text-extra">Granizados</h1>
               </div>
-              <div class="card h-100 border-0 bg-transparent">
-                <img src="source/pasteleria3.png" alt="pastel" />
+            </div>
+            <div class="col" style="padding-top: 14px">
+              <div class="card border-0 bg-transparent image-container">
+                <img src="source/pasteleria-ejemplo.png" alt="pastel" />
+                <h1 class="centered-text-extra">Batidos</h1>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card border-0 bg-transparent image-container">
-              <img src="source/pasteleria1.png" alt="pastel" />
+              <img src="source/pasteleria.png" alt="pastel" />
               <h1 class="centered-text">Pastelería</h1>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="container-fluid text-center" id="polosImages">
-        <div class="row row-cols-1 row-cols-md-2">
-          <div class="col">
-            <div
-              class="row row-cols-1 row-cols-md-2"
-              style="padding-bottom: 20px"
-            >
-              <div class="card h-100 border-0 bg-transparent">
-                <img src="source/polos2.png" alt="polos" />
-              </div>
-              <div class="card h-100 border-0 bg-transparent">
-                <img src="source/polos3.png" alt="polos" />
-              </div>
+      <div class="container-fluid about-us space-min" id="historia">
+        <div class="row">
+          <div class="col text-center">
+            <div class="card text-bg-primary">
+              <h2 class="space-min"><strong>QUIÉNES SOMOS</strong></h2>
+              <p>
+                BRANDO nace en Madrid en 2021 con la intención de
+                <strong>revolucionar el mundo del helado</strong><br />desde la
+                imagen la estética y sus sabores.
+              </p>
             </div>
-            <div class="row row-cols-1 row-cols-md-2">
-              <div class="card h-100 border-0 bg-transparent">
-                <img src="source/polos4.png" alt="polos" />
-              </div>
-              <div class="card h-100 border-0 bg-transparent">
-                <img src="source/polos5.png" alt="polos" />
-              </div>
-            </div>
-          </div>
-          <div class="card border-0 bg-transparent image-container">
-            <img src="source/polos1.png" alt="polos" />
-            <h1 class="centered-text-polos">Polos</h1>
           </div>
         </div>
-      </div>
-
-      <div class="container-fluid about-us" id="historia">
-        <div class="row">
-          <div
-            class="card h-100 text-bg-primary rounded-5 rounded-start-0 mb-3 col-md-6"
-          >
-            <h2><strong>QUIÉNES SOMOS</strong></h2>
-            <p class="text-start fs-3">
-              BRANDO nace en Madrid en 2021 con la intención de
-              <strong>revolucionar el mundo del helado</strong> desde la imagen
-              la estética y sus sabores.<br />
-              Rompe moldes gracias a una presentación en vitrinas de piedra,
-              como si se tratara de
-              <strong
-                >un paisaje lunar en un local donde prevalece el azul cobalto y
-                donde un sol artificial cambia su luz según avanza el
-                día.</strong
-              ><br />
-              En nuestro propio obrador se crea el 100% de los productos que
-              ofrecemos, con la firme intención de obtener la máxima excelencia
-              utilizando
-              <strong
-                >productos NATURALES sin aditivos ni conservantes. De esta
-                manera obtenemos la CALIDAD que nos diferencia.</strong
-              ><br />
-              Debido a su sostenido crecimiento Brando se sitúa como
-              <strong
-                >una de las heladerías artesanales más reconocidas de
-                Madrid.</strong
-              >
-            </p>
+        <div class="row space-min text-center">
+          <div class="col col-lg-6 col-md-6">
+            <div class="card h-100 text-bg-primary border-0">
+              <img src="source/obrador.png" alt="obrador" />
+              <p class="space-min">
+                En nuestro propio obrador se crea el 100% de los productos que
+                ofrecemos, con la firme intención de obtener la máxima
+                excelencia utilizando
+                <strong
+                  >productos NATURALES sin aditivos ni conservantes. De esta
+                  manera obtenemos la CALIDAD que nos diferencia.</strong
+                >
+              </p>
+            </div>
           </div>
-          <div class="col-md-6"></div>
+          <div class="col col-lg-6 col-md-6">
+            <div class="card h-100 text-bg-primary border-0">
+              <img src="source/local.png" alt="local" />
+              <p class="space-min">
+                Rompe moldes gracias a una presentación en vitrinas de piedra,
+                como si se tratara de
+                <strong
+                  >un paisaje lunar en un local donde prevalece el azul cobalto
+                  y donde un sol artificial cambia su luz según avanza el
+                  día.</strong
+                >
+                <br />
+                Debido a su sostenido crecimiento Brando se sitúa como
+                <strong
+                  >una de las heladerías artesanales más reconocidas de
+                  Madrid.</strong
+                >
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="partners">
-      <div class="partners-title">Seamos socios</div>
+      <div class="partners-title"><h2>Seamos socios</h2></div>
       <a class="btn btn-secondary" href="franquicias.html" role="button"
         >Súmate a nosotros</a
       >

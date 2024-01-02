@@ -219,6 +219,22 @@ nav {
   color: white;
 }
 
+.centered-text-extra {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.centered-text-principal {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
 .centered-image {
   position: absolute;
   top: 50%;
