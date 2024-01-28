@@ -3,6 +3,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 0;
+  margin: 0;
 }
 
 .logo {
@@ -60,6 +62,10 @@ nav {
 .nav-link {
   text-decoration: none;
   color: #ffffff;
+}
+
+.navegacion {
+  text-decoration: none;
 }
 
 .logo {
@@ -161,12 +167,18 @@ nav {
 
 .image-container-top {
   position: relative;
-  object-fit: fill;
+  display: flex;
+  max-width: 100%;
+}
+
+.top-image {
+  max-width: 100%;
 }
 
 .background-image {
   top: 0;
   left: 0;
+  max-width: 100%;
 }
 
 @keyframes float {
@@ -190,17 +202,6 @@ nav {
   transform: translate(-50%, -50%);
   left: 50%;
   animation: float 2s ease-in-out infinite;
-}
-
-@media screen and (max-width: 768px) {
-  .foreground-image {
-    height: 350px;
-    width: 350px;
-  }
-
-  h1 {
-    font-size: 100px;
-  }
 }
 
 .centered-text {
@@ -332,4 +333,41 @@ nav {
 
 .scroll-to-top:hover {
   background-color: #555;
+}
+
+@media screen and (max-width: 800px) {
+  .foreground-image {
+    height: 350px;
+    width: 350px;
+  }
+
+  h1 {
+    font-size: 90px;
+  }
+
+  .centered-text-principal {
+    top: 50%;
+  }
+
+  .space-hide {
+    padding-bottom: 20px;
+  }
+
+  .centered-text-franquicias {
+    font-size: 70px;
+  }
+
+  .title-franqu {
+    font-size: 70px;
+  }
+
+  .hide {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .hide-large {
+    display: none;
+  }
 }

@@ -19,7 +19,10 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark nav-underline">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark nav-underline"
+      data-bs-theme="dark"
+    >
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html"
           ><img class="logo" src="source/brando.png" alt="BRANDO"
@@ -40,17 +43,34 @@
             <li class="nav-item">
               <a class="nav-link" href="index.html">Inicio</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#helados">Helados</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#polosImages">Polos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#chocolates">Chocolates</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#pasteleria">Pastelería</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Nuestros productos
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#helados">Helados</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#polosImages">Polos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#chocolates"
+                    >Chocolates</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#pasteleria"
+                    >Pastelería</a
+                  >
+                </li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="index.html#historia">Quiénes somos</a>
@@ -68,15 +88,13 @@
       </div>
     </nav>
 
-    <div class="card border-0 bg-transparent">
-      <div class="image-container-top">
-        <img
-          src="source/franquicia-top.png"
-          alt="franquicias"
-          style="width: 1865px"
-        />
-        <h1 class="centered-text-franquicias">FRANQUICIAS</h1>
-      </div>
+    <div class="image-container-top">
+      <img
+        class="top-image"
+        src="source/franquicia-top.png"
+        alt="franquicias"
+      />
+      <h1 class="centered-text-franquicias">FRANQUICIAS</h1>
     </div>
 
     <div class="container text-center">
@@ -117,10 +135,15 @@
         </div>
       </div>
       <div class="row space-min">
+        <div class="col col-lg-6 col-md-6 hide-large">
+          <div class="card border-0 bg-transparent">
+            <img src="source/requisitos.png" alt="requisitos" />
+          </div>
+        </div>
         <div class="col col-lg-6 col-md-6 space">
           <h2>Brando Helado requiere</h2>
         </div>
-        <div class="col col-lg-6 col-md-6">
+        <div class="col col-lg-6 col-md-6 hide">
           <div class="card border-0 bg-transparent">
             <img src="source/requisitos.png" alt="requisitos" />
           </div>
@@ -130,9 +153,11 @@
         <div class="col col-lg-6 col-md-6">
           <h3 class="space-min">Local</h3>
           <ul class="text-list">
-            <li>Desde 50 m2</li>
+            <li>
+              Desde <strong>50 m<sup>2</sup></strong>
+            </li>
             <li>Sin salida de humos</li>
-            <li>Desde 10.000 habitantes</li>
+            <li>Desde <strong>10.000</strong> habitantes</li>
             <li>Calles principales con tránsito peatonal.</li>
           </ul>
         </div>
@@ -149,7 +174,9 @@
       </div>
       <div class="row space">
         <div class="col col-lg-6 col-md-6">
-          <img src="source/pasos.png" alt="requisitos" />
+          <div class="card border-0 bg-transparent">
+            <img src="source/pasos.png" alt="requisitos" />
+          </div>
         </div>
         <div class="col col-lg-6 col-md-6 space-min">
           <div class="card h-100 border-0 rounded-5 bg-transparent">

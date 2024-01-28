@@ -22,7 +22,10 @@
     <title>Brando</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark nav-underline">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark nav-underline"
+      data-bs-theme="dark"
+    >
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html"
           ><img class="logo" src="source/brando.png" alt="BRANDO"
@@ -45,20 +48,37 @@
                 >Inicio</a
               >
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#helados">Helados</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Nuestros productos
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#helados">Helados</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#polosImages">Polos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#chocolates"
+                    >Chocolates</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#pasteleria"
+                    >Pastelería</a
+                  >
+                </li>
+              </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#polosImages">Polos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#chocolates">Chocolates</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#pasteleria">Pastelería</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#historia">Quiénes somos</a>
+              <a class="nav-link" href="index.html#historia">Quiénes somos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="franquicias.html">Franquicias</a>
@@ -70,32 +90,21 @@
 
     <div class="image-container-top">
       <div class="background-image">
-        <img src="source/principal.png" alt="Brando" />
+        <img class="top-image" src="source/principal.png" alt="Brando" />
       </div>
       <div class="centered-text-principal"><h1>Brando Helados</h1></div>
     </div>
 
-    <!--<div class="hero">
-      <div class="hero-text">
-        <div class="hero-title">Brando helados</div>
-        <div class="hero-subtitle">
-          Descubre cómo puedes formar parte de nuestra red de franquicias y
-          ofrecer el mejor helado artesanal a tus clientes.
-        </div>
-      </div>
-    </div>
-    -->
-
     <div class="container-md">
       <div class="container-fluid text-center space-min" id="helados">
         <div class="row row-cols-1 row-cols-md-2">
-          <div class="card border-0 bg-transparent image-container">
+          <div class="card border-0 bg-transparent image-container space-hide">
             <img src="source/helados4.png" alt="helado" />
             <h1 class="centered-text">Helados</h1>
           </div>
           <div class="col">
             <div
-              class="row row-cols-1 row-cols-md-2"
+              class="row row-cols-2 row-cols-md-2"
               style="padding-bottom: 14px"
             >
               <div class="card border-0 bg-transparent">
@@ -114,9 +123,9 @@
 
       <div class="container-fluid text-center space-min" id="polosImages">
         <div class="row row-cols-1 row-cols-md-2">
-          <div class="col">
+          <div class="col space-hide">
             <div
-              class="row row-cols-1 row-cols-md-2"
+              class="row row-cols-2 row-cols-md-2"
               style="padding-bottom: 20px"
             >
               <div class="card h-100 border-0 bg-transparent">
@@ -126,7 +135,7 @@
                 <img src="source/polos3.png" alt="polos" />
               </div>
             </div>
-            <div class="row row-cols-1 row-cols-md-2">
+            <div class="row row-cols-2 row-cols-md-2">
               <div class="card h-100 border-0 bg-transparent">
                 <img src="source/polos4.png" alt="polos" />
               </div>
@@ -144,7 +153,7 @@
 
       <div class="container-fluid text-center space-min" id="chocolates">
         <div class="row row-cols-1 row-cols-md-2">
-          <div class="card border-0 bg-transparent image-container">
+          <div class="card border-0 bg-transparent image-container space-hide">
             <img
               class="background-image"
               src="source/byn.png"
@@ -159,7 +168,7 @@
           </div>
           <div class="col">
             <div
-              class="row row-cols-1 row-cols-md-2"
+              class="row row-cols-2 row-cols-md-2"
               style="padding-bottom: 14px"
             >
               <div class="card h-100 border-0 bg-transparent">
@@ -178,18 +187,10 @@
 
       <div class="container-fluid text-center space-min" id="pasteleria">
         <div class="row row-cols-1 row-cols-md-2">
-          <div class="col">
-            <div class="col">
-              <div class="card border-0 bg-transparent image-container">
-                <img src="source/pasteleria-ejemplo.png" alt="pastel" />
-                <h1 class="centered-text-extra">Granizados</h1>
-              </div>
-            </div>
-            <div class="col" style="padding-top: 14px">
-              <div class="card border-0 bg-transparent image-container">
-                <img src="source/pasteleria-ejemplo.png" alt="pastel" />
-                <h1 class="centered-text-extra">Batidos</h1>
-              </div>
+          <div class="col space-hide">
+            <div class="card border-0 bg-transparent image-container">
+              <img src="source/granizados.png" alt="pastel" />
+              <h1 class="centered-text">Granizados</h1>
             </div>
           </div>
           <div class="col">
@@ -209,13 +210,13 @@
               <p>
                 BRANDO nace en Madrid en 2021 con la intención de
                 <strong>revolucionar el mundo del helado</strong><br />desde la
-                imagen la estética y sus sabores.
+                imagen, la estética y sus sabores.
               </p>
             </div>
           </div>
         </div>
         <div class="row space-min text-center">
-          <div class="col col-lg-6 col-md-6">
+          <div class="col col-lg-6 col-md-6 space-hide">
             <div class="card h-100 text-bg-primary border-0">
               <img src="source/obrador.png" alt="obrador" />
               <p class="space-min">
