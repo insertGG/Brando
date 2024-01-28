@@ -89,11 +89,17 @@
     </nav>
 
     <div class="image-container-top">
-      <img
-        class="top-image"
-        src="source/franquicia-top.png"
-        alt="franquicias"
-      />
+      <picture>
+        <source
+          srcset="source/franquicia-top-movil.png"
+          media="screen and (max-width: 600px)"
+        />
+        <img
+          class="top-image"
+          src="source/franquicia-top.png"
+          alt="franquicias"
+        />
+      </picture>
       <h1 class="centered-text-franquicias">FRANQUICIAS</h1>
     </div>
 
@@ -109,14 +115,14 @@
           </div>
         </div>
         <div class="col col-lg-6 col-md-6">
-          <h2 class="space">Oferta comercial</h2>
-          <h3 class="space-min">Obrador propio</h3>
+          <h2 class="space4">Oferta comercial</h2>
+          <h3 class="space5">Obrador propio</h3>
           <p>
             Todas nuestras
             <strong>elaboraciones son 100% hechas en nuestro obrador</strong>,
             adaptando productos a la necesidad del franquiciado.
           </p>
-          <h3 class="space-min">Materia prima</h3>
+          <h3 class="space5">Materia prima</h3>
           <p>
             En BRANDO apostamos por utilizar
             <strong
@@ -126,7 +132,7 @@
             Nos gusta diferenciarnos y sabemos el gran valor añadido que esto
             aporta.
           </p>
-          <h3 class="space-min">Gestión sencilla</h3>
+          <h3 class="space5">Gestión sencilla</h3>
           <p>
             La presencia de nuestro obrador y nuestra experiencia, hacen que
             BRANDO sea un concepto de
@@ -134,13 +140,13 @@
           </p>
         </div>
       </div>
-      <div class="row space-min">
+      <div class="row space5">
         <div class="col col-lg-6 col-md-6 hide-large">
           <div class="card border-0 bg-transparent">
             <img src="source/requisitos.png" alt="requisitos" />
           </div>
         </div>
-        <div class="col col-lg-6 col-md-6 space">
+        <div class="col col-lg-6 col-md-6 space4">
           <h2>Brando Helado requiere</h2>
         </div>
         <div class="col col-lg-6 col-md-6 hide">
@@ -151,7 +157,7 @@
       </div>
       <div class="row">
         <div class="col col-lg-6 col-md-6">
-          <h3 class="space-min">Local</h3>
+          <h3 class="space5">Local</h3>
           <ul class="text-list">
             <li>
               Desde <strong>50 m<sup>2</sup></strong>
@@ -162,7 +168,7 @@
           </ul>
         </div>
         <div class="col col-lg-6 col-md-6">
-          <h3 class="space-min">Economía</h3>
+          <h3 class="space5">Economía</h3>
           <ul class="text-list">
             <li>Inversión desde <strong>53.000€</strong></li>
             <li>Canon de entrada: <strong>12.000€</strong></li>
@@ -172,13 +178,13 @@
           </ul>
         </div>
       </div>
-      <div class="row space">
+      <div class="row space4">
         <div class="col col-lg-6 col-md-6">
           <div class="card border-0 bg-transparent">
             <img src="source/pasos.png" alt="requisitos" />
           </div>
         </div>
-        <div class="col col-lg-6 col-md-6 space-min">
+        <div class="col col-lg-6 col-md-6 space5">
           <div class="card h-100 border-0 rounded-5 bg-transparent">
             <h2>Pasos a seguir</h2>
           </div>
@@ -309,7 +315,7 @@
     </div>
 
     <div class="container">
-      <div class="row text-center space">
+      <div class="row text-center space4">
         <div class="col col-lg-6 col-md-6">
           <h3>Pablo Aramburu</h3>
           <p>
@@ -333,25 +339,16 @@
       </div>
       <div class="footer-nav">
         <a class="footer-nav-link" href="index.html"
-          ><img
-            class="logoF"
-            src="source/instagramIcon.svg"
-            alt="Instagram"
-          />brando.helado</a
+          ><img class="logoF" src="source/instagramIcon.svg" alt="Instagram" />
+          <p class="hide redes">brando.helado</p></a
         >
         <a class="footer-nav-link" href="#"
-          ><img
-            class="logoF"
-            src="source/uberEatsIcon.svg"
-            alt="Uber Eats"
-          />Uber Eats</a
+          ><img class="logoF" src="source/uberEatsIcon.svg" alt="Uber Eats" />
+          <p class="hide redes">Uber Eats</p></a
         >
         <a class="footer-nav-link" href="#"
-          ><img
-            class="logoF"
-            src="source/glovoapp-icon.svg"
-            alt="Glovo"
-          />Glovo</a
+          ><img class="logoF" src="source/glovoapp-icon.svg" alt="Glovo" />
+          <p class="hide redes">Glovo</p></a
         >
       </div>
     </div>

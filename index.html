@@ -90,23 +90,26 @@
 
     <div class="image-container-top">
       <div class="background-image">
-        <img class="top-image" src="source/principal.png" alt="Brando" />
+        <picture>
+          <source
+            srcset="source/principalMovil.png"
+            media="screen and (max-width: 600px)"
+          />
+          <img class="top-image" src="source/principal.png" alt="Brando" />
+        </picture>
       </div>
       <div class="centered-text-principal"><h1>Brando Helados</h1></div>
     </div>
 
     <div class="container-md">
-      <div class="container-fluid text-center space-min" id="helados">
+      <div class="container-fluid text-center space1" id="helados">
         <div class="row row-cols-1 row-cols-md-2">
-          <div class="card border-0 bg-transparent image-container space-hide">
+          <div class="card border-0 bg-transparent image-container space2">
             <img src="source/helados4.png" alt="helado" />
             <h1 class="centered-text">Helados</h1>
           </div>
           <div class="col">
-            <div
-              class="row row-cols-2 row-cols-md-2"
-              style="padding-bottom: 14px"
-            >
+            <div class="row row-cols-2 row-cols-md-2 space3">
               <div class="card border-0 bg-transparent">
                 <img src="source/helados2.png" alt="helado" />
               </div>
@@ -121,13 +124,10 @@
         </div>
       </div>
 
-      <div class="container-fluid text-center space-min" id="polosImages">
+      <div class="container-fluid text-center" id="polosImages">
         <div class="row row-cols-1 row-cols-md-2">
-          <div class="col space-hide">
-            <div
-              class="row row-cols-2 row-cols-md-2"
-              style="padding-bottom: 20px"
-            >
+          <div class="col space3">
+            <div class="row row-cols-2 row-cols-md-2 space4">
               <div class="card h-100 border-0 bg-transparent">
                 <img src="source/polos2.png" alt="polos" />
               </div>
@@ -135,7 +135,7 @@
                 <img src="source/polos3.png" alt="polos" />
               </div>
             </div>
-            <div class="row row-cols-2 row-cols-md-2">
+            <div class="row row-cols-2 row-cols-md-2" style="padding-top: 10px">
               <div class="card h-100 border-0 bg-transparent">
                 <img src="source/polos4.png" alt="polos" />
               </div>
@@ -144,16 +144,16 @@
               </div>
             </div>
           </div>
-          <div class="card border-0 bg-transparent image-container">
+          <div class="card border-0 bg-transparent image-container space7">
             <img src="source/polos1.png" alt="polos" />
             <h1 class="centered-text-polos">Polos</h1>
           </div>
         </div>
       </div>
 
-      <div class="container-fluid text-center space-min" id="chocolates">
+      <div class="container-fluid text-center space5" id="chocolates">
         <div class="row row-cols-1 row-cols-md-2">
-          <div class="card border-0 bg-transparent image-container space-hide">
+          <div class="card border-0 bg-transparent image-container space3">
             <img
               class="background-image"
               src="source/byn.png"
@@ -167,10 +167,7 @@
             <h1 class="centered-text">Chocolates</h1>
           </div>
           <div class="col">
-            <div
-              class="row row-cols-2 row-cols-md-2"
-              style="padding-bottom: 14px"
-            >
+            <div class="row row-cols-2 row-cols-md-2 space3">
               <div class="card h-100 border-0 bg-transparent">
                 <img src="source/chocolate2.png" alt="chocolate" />
               </div>
@@ -185,9 +182,9 @@
         </div>
       </div>
 
-      <div class="container-fluid text-center space-min" id="pasteleria">
+      <div class="container-fluid text-center space5" id="pasteleria">
         <div class="row row-cols-1 row-cols-md-2">
-          <div class="col space-hide">
+          <div class="col space3">
             <div class="card border-0 bg-transparent image-container">
               <img src="source/granizados.png" alt="pastel" />
               <h1 class="centered-text">Granizados</h1>
@@ -202,11 +199,11 @@
         </div>
       </div>
 
-      <div class="container-fluid about-us space-min" id="historia">
+      <div class="container-fluid about-us space6" id="historia">
         <div class="row">
           <div class="col text-center">
             <div class="card text-bg-primary">
-              <h2 class="space-min"><strong>QUIÉNES SOMOS</strong></h2>
+              <h2 class="space6"><strong>QUIÉNES SOMOS</strong></h2>
               <p>
                 BRANDO nace en Madrid en 2021 con la intención de
                 <strong>revolucionar el mundo del helado</strong><br />desde la
@@ -215,11 +212,11 @@
             </div>
           </div>
         </div>
-        <div class="row space-min text-center">
-          <div class="col col-lg-6 col-md-6 space-hide">
+        <div class="row space6 text-center">
+          <div class="col col-lg-6 col-md-6 space2">
             <div class="card h-100 text-bg-primary border-0">
               <img src="source/obrador.png" alt="obrador" />
-              <p class="space-min">
+              <p class="space2">
                 En nuestro propio obrador se crea el 100% de los productos que
                 ofrecemos, con la firme intención de obtener la máxima
                 excelencia utilizando
@@ -233,7 +230,7 @@
           <div class="col col-lg-6 col-md-6">
             <div class="card h-100 text-bg-primary border-0">
               <img src="source/local.png" alt="local" />
-              <p class="space-min">
+              <p class="space2">
                 Rompe moldes gracias a una presentación en vitrinas de piedra,
                 como si se tratara de
                 <strong
@@ -267,25 +264,16 @@
       </div>
       <div class="footer-nav">
         <a class="footer-nav-link" href="index.html"
-          ><img
-            class="logoF"
-            src="source/instagramIcon.svg"
-            alt="Instagram"
-          />brando.helado</a
+          ><img class="logoF" src="source/instagramIcon.svg" alt="Instagram" />
+          <p class="hide redes">brando.helado</p></a
         >
         <a class="footer-nav-link" href="#"
-          ><img
-            class="logoF"
-            src="source/uberEatsIcon.svg"
-            alt="Uber Eats"
-          />Uber Eats</a
+          ><img class="logoF" src="source/uberEatsIcon.svg" alt="Uber Eats" />
+          <p class="hide redes">Uber Eats</p></a
         >
         <a class="footer-nav-link" href="#"
-          ><img
-            class="logoF"
-            src="source/glovoapp-icon.svg"
-            alt="Glovo"
-          />Glovo</a
+          ><img class="logoF" src="source/glovoapp-icon.svg" alt="Glovo" />
+          <p class="hide redes">Glovo</p></a
         >
       </div>
     </div>
